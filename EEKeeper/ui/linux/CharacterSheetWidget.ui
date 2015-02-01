@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>746</width>
-    <height>378</height>
+    <height>313</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -52,7 +52,7 @@
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>8</number>
      </property>
      <property name="elideMode">
       <enum>Qt::ElideNone</enum>
@@ -943,278 +943,297 @@
         </property>
        </item>
       </widget>
-      <widget class="QLabel" name="labelSetTraps">
+      <widget class="QGroupBox" name="groupBox">
        <property name="geometry">
         <rect>
-         <x>550</x>
-         <y>170</y>
-         <width>121</width>
-         <height>21</height>
+         <x>510</x>
+         <y>10</y>
+         <width>211</width>
+         <height>231</height>
         </rect>
        </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
+       <property name="title">
+        <string>Thieving Skills</string>
        </property>
-       <property name="text">
-        <string>Set Traps</string>
+       <property name="flat">
+        <bool>false</bool>
        </property>
-      </widget>
-      <widget class="QLabel" name="labelDetectIllusions">
-       <property name="geometry">
-        <rect>
-         <x>550</x>
-         <y>200</y>
-         <width>121</width>
-         <height>21</height>
-        </rect>
+       <property name="checkable">
+        <bool>false</bool>
        </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Detect Illusions</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineDetectIllusions">
-       <property name="geometry">
-        <rect>
-         <x>680</x>
-         <y>200</y>
-         <width>31</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>15</string>
-       </property>
-       <property name="maxLength">
-        <number>3</number>
-       </property>
-      </widget>
-      <widget class="QLabel" name="labelOpenLocks">
-       <property name="geometry">
-        <rect>
-         <x>550</x>
-         <y>80</y>
-         <width>121</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Open Locks</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="labelFindTraps">
-       <property name="geometry">
-        <rect>
-         <x>550</x>
-         <y>140</y>
-         <width>121</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Find Traps</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineMoveSilently">
-       <property name="geometry">
-        <rect>
-         <x>680</x>
-         <y>20</y>
-         <width>31</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>15</string>
-       </property>
-       <property name="maxLength">
-        <number>3</number>
-       </property>
-      </widget>
-      <widget class="QLabel" name="labelMoveSilently">
-       <property name="geometry">
-        <rect>
-         <x>550</x>
-         <y>20</y>
-         <width>121</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Move Silently</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineOpenLocks">
-       <property name="geometry">
-        <rect>
-         <x>680</x>
-         <y>80</y>
-         <width>31</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>15</string>
-       </property>
-       <property name="maxLength">
-        <number>3</number>
-       </property>
-      </widget>
-      <widget class="QLabel" name="labelPickPockets">
-       <property name="geometry">
-        <rect>
-         <x>550</x>
-         <y>110</y>
-         <width>121</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Pick Pockets</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineHideInShadows">
-       <property name="geometry">
-        <rect>
-         <x>680</x>
-         <y>50</y>
-         <width>31</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>15</string>
-       </property>
-       <property name="maxLength">
-        <number>3</number>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineSetTraps">
-       <property name="geometry">
-        <rect>
-         <x>680</x>
-         <y>170</y>
-         <width>31</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>15</string>
-       </property>
-       <property name="maxLength">
-        <number>3</number>
-       </property>
-      </widget>
-      <widget class="QLabel" name="labelHideInShadows">
-       <property name="geometry">
-        <rect>
-         <x>550</x>
-         <y>50</y>
-         <width>121</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Hide in Shadows</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineFindTraps">
-       <property name="geometry">
-        <rect>
-         <x>680</x>
-         <y>140</y>
-         <width>31</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>15</string>
-       </property>
-       <property name="maxLength">
-        <number>3</number>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="linePickPockets">
-       <property name="geometry">
-        <rect>
-         <x>680</x>
-         <y>110</y>
-         <width>31</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>15</string>
-       </property>
-       <property name="maxLength">
-        <number>3</number>
-       </property>
+       <widget class="QLabel" name="labelDetectIllusions">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Detect Illusions</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelPickPockets">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Pick Pockets</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="linePickPockets">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>110</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>15</string>
+        </property>
+        <property name="maxLength">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineSetTraps">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>170</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>15</string>
+        </property>
+        <property name="maxLength">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineMoveSilently">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>20</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>15</string>
+        </property>
+        <property name="maxLength">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelMoveSilently">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Move Silently</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelFindTraps">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Find Traps</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineFindTraps">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>140</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>15</string>
+        </property>
+        <property name="maxLength">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelOpenLocks">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Open Locks</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineOpenLocks">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>80</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>15</string>
+        </property>
+        <property name="maxLength">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelHideInShadows">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Hide in Shadows</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelSetTraps">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Set Traps</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineDetectIllusions">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>200</y>
+          <width>31</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>15</string>
+        </property>
+        <property name="maxLength">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineHideInShadows">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>50</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>15</string>
+        </property>
+        <property name="maxLength">
+         <number>3</number>
+        </property>
+       </widget>
       </widget>
      </widget>
      <widget class="QWidget" name="tabCharacteristics">
@@ -1757,9 +1776,9 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tabSavingThrows">
+     <widget class="QWidget" name="tabResistances">
       <attribute name="title">
-       <string>Saving Throws</string>
+       <string>Resistances</string>
       </attribute>
       <widget class="QLabel" name="labelDeath">
        <property name="geometry">
@@ -2411,11 +2430,6 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tabResistances">
-      <attribute name="title">
-       <string>Resistances</string>
-      </attribute>
-     </widget>
      <widget class="QWidget" name="tabAffects">
       <attribute name="title">
        <string>Affects</string>
@@ -2424,6 +2438,16 @@
      <widget class="QWidget" name="tabGlobalVariables">
       <attribute name="title">
        <string>Global Variables</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Local Variables</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Journal Entries</string>
       </attribute>
      </widget>
     </widget>
