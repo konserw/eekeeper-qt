@@ -1,0 +1,20 @@
+This TODO list is specifically related to the needs of the Qt branch. This is
+intended to become the primary TODO list as the conversion finishes.
+
+Priority will attempt to be maintained, but, especially in the conversion
+stages, this is a very fluid concept.
+
+ISSUES:
+
+HIGH:
+- Create the Item and Spell Browsers as Dockable widget
+
+MEDIUM:
+- Allow out-of-party CRE loading
+- Allow out-of-party CHR loading
+- Implement "Change Portrait"
+
+LOW:
+- Gather community support for translating the GUI
+- Implement "About"
+- Implement webpage tie-in

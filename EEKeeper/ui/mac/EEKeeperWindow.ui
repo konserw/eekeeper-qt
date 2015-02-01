@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EEKeeperWindow</class>
+ <widget class="QMainWindow" name="EEKeeperWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>798</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>650</width>
+    <height>460</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>EEKeeper</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>6</number>
+    </property>
+    <property name="topMargin">
+     <number>6</number>
+    </property>
+    <property name="rightMargin">
+     <number>6</number>
+    </property>
+    <property name="bottomMargin">
+     <number>6</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>524</width>
+        <height>235</height>
+       </size>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>true</bool>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>798</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Saved_Game"/>
+    <addaction name="actionOpen_Character_File"/>
+    <addaction name="actionOpen_Creature_File"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionItem_Browser"/>
+    <addaction name="actionSpell_Browser"/>
+    <addaction name="actionCreature_Browser"/>
+    <addaction name="separator"/>
+    <addaction name="actionToolbar"/>
+    <addaction name="actionStatus_Bar"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuSave_Overwrite">
+     <property name="title">
+      <string>Save Overwrite</string>
+     </property>
+     <addaction name="actionAllow_on_CHR_files"/>
+     <addaction name="actionAllow_on_CRE_files"/>
+    </widget>
+    <widget class="QMenu" name="menuLists">
+     <property name="title">
+      <string>Lists</string>
+     </property>
+     <addaction name="actionAffects"/>
+     <addaction name="actionKits"/>
+     <addaction name="actionNumber_of_Attacks"/>
+    </widget>
+    <addaction name="actionInstallation_Directory"/>
+    <addaction name="actionSpells"/>
+    <addaction name="actionMiscellaneous"/>
+    <addaction name="menuSave_Overwrite"/>
+    <addaction name="separator"/>
+    <addaction name="menuLists"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionView_Readme"/>
+    <addaction name="separator"/>
+    <addaction name="actionVisit_the_Website"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen_Saved_Game"/>
+   <addaction name="actionSave_Game"/>
+   <addaction name="actionVisit_the_Website"/>
+   <addaction name="actionAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidgetSpellBrowser">
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>38</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::AllDockWidgetFeatures</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>Spell Browser</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="SpellBrowserWidget" name="dockWidgetSpellBrowserContents"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetItemBrowser">
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>38</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::AllDockWidgetFeatures</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>Item Browser</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="ItemBrowserWidget" name="dockWidgetItemBrowserContents"/>
+  </widget>
+<action name="actionOpen_Saved_Game">
+   <property name="icon">
+    <iconset resource="../../eekeeper.qrc">
+     <normaloff>:/icons/res/document-open.svg</normaloff>:/icons/res/document-open.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Open Saved Game...</string>
+   </property>
+   <property name="iconText">
+    <string>Open Saved Game</string>
+   </property>
+   <property name="statusTip">
+    <string>Open a saved game</string>
+   </property>
+  </action>
+  <action name="actionOpen_Character_File">
+   <property name="text">
+    <string>Open Character File...</string>
+   </property>
+   <property name="statusTip">
+    <string>Open a character file</string>
+   </property>
+  </action>
+  <action name="actionOpen_Creature_File">
+   <property name="text">
+    <string>Open Creature File...</string>
+   </property>
+   <property name="statusTip">
+    <string>Open a creature file</string>
+   </property>
+  </action>
+  <action name="actionItem_Browser">
+   <property name="text">
+    <string>Item Browser...</string>
+   </property>
+   <property name="statusTip">
+    <string>Open the item browswer</string>
+   </property>
+  </action>
+  <action name="actionSpell_Browser">
+   <property name="text">
+    <string>Spell Browser...</string>
+   </property>
+   <property name="statusTip">
+    <string>Open the spell browser</string>
+   </property>
+  </action>
+  <action name="actionCreature_Browser">
+   <property name="text">
+    <string>Creature Browser...</string>
+   </property>
+   <property name="statusTip">
+    <string>Open the creature browser</string>
+   </property>
+  </action>
+  <action name="actionToolbar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Toolbar</string>
+   </property>
+   <property name="statusTip">
+    <string>Toggle the toolbar</string>
+   </property>
+  </action>
+  <action name="actionStatus_Bar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Status Bar</string>
+   </property>
+   <property name="statusTip">
+    <string>Toggle the status bar</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="statusTip">
+    <string>Exit EEKeeper</string>
+   </property>
+  </action>
+  <action name="actionSave_Game">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../eekeeper.qrc">
+     <normaloff>:/icons/res/media-floppy.svg</normaloff>:/icons/res/media-floppy.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Save_Game</string>
+   </property>
+   <property name="statusTip">
+    <string>Save the current game</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../../eekeeper.qrc">
+     <normaloff>:/icons/res/help-browser.svg</normaloff>:/icons/res/help-browser.svg</iconset>
+   </property>
+   <property name="text">
+    <string>About EEKeeper</string>
+   </property>
+   <property name="statusTip">
+    <string>About EEKeeper</string>
+   </property>
+  </action>
+  <action name="actionView_Readme">
+   <property name="icon">
+    <iconset resource="../../eekeeper.qrc">
+     <normaloff>:/icons/res/accessories-text-editor.svg</normaloff>:/icons/res/accessories-text-editor.svg</iconset>
+   </property>
+   <property name="text">
+    <string>View Readme</string>
+   </property>
+   <property name="statusTip">
+    <string>Open the Readme file</string>
+   </property>
+  </action>
+  <action name="actionVisit_the_Website">
+   <property name="icon">
+    <iconset resource="../../eekeeper.qrc">
+     <normaloff>:/icons/res/internet-web-browser.svg</normaloff>:/icons/res/internet-web-browser.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Visit the Website</string>
+   </property>
+   <property name="statusTip">
+    <string>Open the EEKeeper website in your browser</string>
+   </property>
+  </action>
+  <action name="actionInstallation_Directory">
+   <property name="text">
+    <string>Installation Directory...</string>
+   </property>
+   <property name="toolTip">
+    <string>Change the installation directory</string>
+   </property>
+  </action>
+  <action name="actionSpells">
+   <property name="text">
+    <string>Spells...</string>
+   </property>
+   <property name="toolTip">
+    <string>Change spell options</string>
+   </property>
+  </action>
+  <action name="actionMiscellaneous">
+   <property name="text">
+    <string>Miscellaneous...</string>
+   </property>
+   <property name="toolTip">
+    <string>Miscellaneous settings</string>
+   </property>
+  </action>
+  <action name="actionAllow_on_CRE_files">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Allow on CRE files</string>
+   </property>
+  </action>
+  <action name="actionAllow_on_CHR_files">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Allow on CHR files</string>
+   </property>
+  </action>
+  <action name="actionAffects">
+   <property name="text">
+    <string>Affects...</string>
+   </property>
+  </action>
+  <action name="actionKits">
+   <property name="text">
+    <string>Kits...</string>
+   </property>
+  </action>
+  <action name="actionNumber_of_Attacks">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Number of Attacks...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>SpellBrowserWidget</class>
+   <extends>QWidget</extends>
+   <header>SpellBrowserWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../eekeeper.qrc"/>
+ </resources>
+ <connections/>
+</ui>

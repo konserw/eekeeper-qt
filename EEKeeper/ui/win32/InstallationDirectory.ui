@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InstallationDirectory</class>
+ <widget class="QDialog" name="InstallationDirectory">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>265</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="labelDirectory">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>221</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BG:EE Installation Directory:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineDirectory">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>281</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Currently chosen BG:EE installation directory</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboLanguage">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>60</y>
+     <width>151</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>All possible languages to show the EE Keeper resources</string>
+   </property>
+   <item>
+    <property name="text">
+     <string notr="true">cs_CZ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">de_DE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">en_US</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">es_ES</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">fr_FR</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">it_IT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">pl_PL</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">pt_BR</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">tr_TR</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="labelLanguage">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>121</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Language:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonOk">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>25</y>
+     <width>114</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonCancel">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>80</y>
+     <width>114</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonBrowse">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>135</y>
+     <width>114</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Open a dialog to manually set the BGEE installation directory</string>
+   </property>
+   <property name="text">
+    <string>Browse...</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>271</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="plainText">
+    <string>EE Keeper needs to know where you installed Baldur's Gate: Enhanced Edition.
+
+Search: Have EE Keeper attempt to find the installation for you.
+
+Browse: Manually choose the directory.</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonSearch">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>190</y>
+     <width>114</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Have EE Keeper search for the installation directory</string>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

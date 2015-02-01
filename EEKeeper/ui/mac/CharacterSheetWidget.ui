@@ -1,0 +1,2102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CharacterSheetWidget</class>
+ <widget class="QWidget" name="CharacterSheetWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>430</width>
+    <height>306</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>389</width>
+    <height>306</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="topMargin">
+    <number>6</number>
+   </property>
+   <property name="rightMargin">
+    <number>6</number>
+   </property>
+   <property name="bottomMargin">
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabSheet">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <property name="usesScrollButtons">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="tabAbilities">
+      <attribute name="title">
+       <string>Abilities</string>
+      </attribute>
+      <widget class="QLabel" name="labelStr">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Strength</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelCon">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Constitution</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelCha">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>10</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Charmisma</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineStr">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCon">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCha">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelStrPlus">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Strength +</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineStrPlus">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelDex">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Dexterity</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineDex">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>70</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelInt">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>40</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Intelligence</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineInt">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>40</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelWis">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>70</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Wisdom</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineWis">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>70</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>341</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelBaseHP">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Base HP</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineBaseHP">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>110</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>4</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelCurrentHP">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Current HP</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCurrentHP">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>140</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>4</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelBaseAC">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Base AC</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineBaseAC">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>170</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelThaco">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>THAC0</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineThaco">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>200</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelReputation">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>230</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Reputation</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineReputation">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>230</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelAttacks">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>110</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Attacks</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelExperience">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>140</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Experience</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelExpForKill">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>170</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Exp for Kill</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGold">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>200</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Gold</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelLevels">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>230</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Levels</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineExperience">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>140</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>10</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineExpForKill">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>170</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>10</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineGold">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>200</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>10</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineLevel1">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>230</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineLevel2">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>230</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineLevel3">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>230</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxAttacks">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>110</y>
+         <width>111</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1.5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2.5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3.5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4.5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabCharacteristics">
+      <attribute name="title">
+       <string>Characteristics</string>
+      </attribute>
+      <widget class="QLabel" name="labelGender">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Gender</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGenderRace">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Race</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGenderAlignment">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Alignment</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGenderClass">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Class</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGenderKit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Kit</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGenderRacialEnemy">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Racial Enemy</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGenderEnemyAlly">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enemy/Ally</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGenderMovementSpeed">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Movement Speed</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxGender">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>10</y>
+         <width>161</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::InsertAlphabetically</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGender">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>8</y>
+         <width>79</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Value</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxRace">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>161</width>
+         <height>26</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxAlignment">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>70</y>
+         <width>161</width>
+         <height>26</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxClass">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>100</y>
+         <width>161</width>
+         <height>26</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxKit">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>130</y>
+         <width>161</width>
+         <height>26</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxRacialEnemy">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>160</y>
+         <width>161</width>
+         <height>26</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonRace">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>38</y>
+         <width>79</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Value</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonAlignment">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>68</y>
+         <width>79</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Value</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonClass">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>98</y>
+         <width>79</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Value</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonKit">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>128</y>
+         <width>79</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Value</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonRacialEnemy">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>158</y>
+         <width>79</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Value</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxEnemyAlly">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>190</y>
+         <width>161</width>
+         <height>26</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonEnemyAlly">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>188</y>
+         <width>79</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Value</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineMovementSpeed">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>220</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelZeroIsNormal">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>220</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Zero is normal</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabAppearance">
+      <attribute name="title">
+       <string>Appearance</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tabInventory">
+      <attribute name="title">
+       <string>Inventory</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="InventoryTab" name="widgetInventory" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabMemorization">
+      <attribute name="title">
+       <string>Memorization</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="MemorizationTab" name="widgetMemorization" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabInnate">
+      <attribute name="title">
+       <string>Innate</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="SpellTab" name="widgetInnate" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabWizard">
+      <attribute name="title">
+       <string>Wizard</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="SpellTab" name="widgetWizard" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabPriest">
+      <attribute name="title">
+       <string>Priest</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="SpellTab" name="widgetPriest" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabSavingThrows">
+      <attribute name="title">
+       <string>Saving Throws</string>
+      </attribute>
+      <widget class="QLabel" name="labelDeath">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>221</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Paralyzation, Poison, Death Magic</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelWand">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>221</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Rod, Staff, Wand</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelPetrification">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>221</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Petrification, Polymorph</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelBreath">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>221</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Breath Weapons</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelSpells">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>221</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Spells</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineDeath">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineWand">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>40</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="linePetrification">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>70</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineBreath">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>100</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineSpells">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>130</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabProficiencies">
+      <attribute name="title">
+       <string>Proficiencies</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="ProficienciesTab" name="widgetProficiencies" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabResistances">
+      <attribute name="title">
+       <string>Resistances</string>
+      </attribute>
+      <widget class="QLabel" name="labelAcid">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Acid</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelCold">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Cold</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelElectricity">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Electricity</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelFire">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Fire</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelCrushing">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Crushing</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelPiercing">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Piercing</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelSlashing">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Slashing</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelMissile">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Missile</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelMagic">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>70</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Magic</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelMagicFire">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>100</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Magic, Fire</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelMagicCold">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>130</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Magic, Cold</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineAcid">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCold">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineElectricity">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>70</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineFire">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>100</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCrushing">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>130</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="linePiercing">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>160</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineSlashing">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineMissile">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>40</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineMagic">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>70</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineMagicFire">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>100</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineMagicCold">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>130</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabThieves">
+      <attribute name="title">
+       <string>Thieves</string>
+      </attribute>
+      <widget class="QLabel" name="labelMoveSilently">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Move Silently</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelHideInShadows">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Hide in Shadows</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelOpenLocks">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Open Locks</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelPickPockets">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Pick Pockets</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelFindTraps">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Find Traps</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelSetTraps">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Traps</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelDetectIllusions">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Detect Illusions</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineMoveSilently">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineHideInShadows">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineOpenLocks">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>70</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="linePickPockets">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>100</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineFindTraps">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>130</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineSetTraps">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>160</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineDetectIllusions">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>190</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabStateFlags">
+      <attribute name="title">
+       <string>State Flags</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tabAffects">
+      <attribute name="title">
+       <string>Affects</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tabGlobalVariables">
+      <attribute name="title">
+       <string>Global Variables</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SpellTab</class>
+   <extends>QWidget</extends>
+   <header>SpellTab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MemorizationTab</class>
+   <extends>QWidget</extends>
+   <header>MemorizationTab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>InventoryTab</class>
+   <extends>QWidget</extends>
+   <header>InventoryTab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ProficienciesTab</class>
+   <extends>QWidget</extends>
+   <header>ProficienciesTab.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
